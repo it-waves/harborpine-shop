@@ -11,3 +11,6 @@ class TestCartTotal(unittest.TestCase):
 
     def test_discount_applies(self):
         self.assertEqual(cart_total([(10000, 1)], "SAVE10"), 9000)
+
+    def test_fifty_dollars_ships_free(self):
+        self.assertEqual(cart_total([(5000, 1)]), 5000)
