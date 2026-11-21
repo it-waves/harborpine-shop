@@ -28,3 +28,7 @@ class TestCartTotal(unittest.TestCase):
     def test_discount_below_threshold_pays_shipping(self):
         # $52 - 10% = $46.80, under $50, so shipping is still charged
         self.assertEqual(cart_total([(5200, 1)], "SAVE10"), 4680 + 699)
+
+    def test_no_gift_wrap_fee_when_unticked(self):
+        # gift_wrap=False is what checkout sends when the box is not ticked
+        self.assertEqual(cart_total([(1200, 1)], gift_wrap=False), 1200 + 699)
