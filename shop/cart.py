@@ -10,7 +10,7 @@ def _apply_discount(subtotal, code):
     return subtotal
 
 
-def cart_total(items, discount_code=None, gift_wrap=False):
+def cart_total(items, discount_code=None, gift_wrap=None):
     """Return the order total in cents.
 
     items: list of (price_in_cents, quantity)
@@ -19,5 +19,5 @@ def cart_total(items, discount_code=None, gift_wrap=False):
     code = (discount_code or "").strip().upper()
     subtotal = _apply_discount(subtotal, code)
     shipping = 0 if subtotal >= FREE_SHIPPING_OVER else FLAT_SHIPPING
-    wrap = GIFT_WRAP_FEE if gift_wrap else 0
+    wrap = GIFT_WRAP_FEE if gift_wrap is not None else 0
     return subtotal + shipping + wrap
