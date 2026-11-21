@@ -1,0 +1,5 @@
+# Who must review changes to which files.
+# On a team, use a team: @your-org/checkout-team
+*         @it-waves
+/shop/    @it-waves
+/tests/   @it-waves
