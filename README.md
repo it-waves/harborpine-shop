@@ -9,3 +9,4 @@ Receipts are emailed after checkout.
 Questions? Email help@harborpine.example
 FAQ: https://harborpine.example/faq
 Store hours: 9am to 6pm, Monday to Saturday.
+Returns accepted within 30 days.
