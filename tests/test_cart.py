@@ -20,3 +20,6 @@ class TestCartTotal(unittest.TestCase):
 
     def test_gift_wrap_adds_fee(self):
         self.assertEqual(cart_total([(1200, 2)], gift_wrap=True), 2400 + 699 + 299)
+
+    def test_discount_code_ignores_spaces(self):
+        self.assertEqual(cart_total([(6000, 1)], " save10 "), 5400)
