@@ -11,6 +11,7 @@ Questions? Email help@harborpine.example
 FAQ: https://harborpine.example/faq
 Store hours: 9am to 6pm, Monday to Saturday.
 Returns accepted within 30 days.
+Returns address: 1 Harbor Way, Pine Bay.
 Phone: 555-0100
 Release history: see the Releases page on GitHub.
 How we ship: see WORKFLOW.md.
