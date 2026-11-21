@@ -8,3 +8,4 @@ Run the tests with: python3 -m unittest -v
 Receipts are emailed after checkout.
 Questions? Email help@harborpine.example
 FAQ: https://harborpine.example/faq
+Store hours: 9am to 6pm, Monday to Saturday.
