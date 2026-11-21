@@ -6,3 +6,4 @@ Gift wrap is available for $2.99.
 
 Run the tests with: python3 -m unittest -v
 Questions? Email help@harborpine.example
+FAQ: https://harborpine.example/faq
