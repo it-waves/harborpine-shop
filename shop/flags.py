@@ -1,2 +1,2 @@
 # Feature flags: unfinished work can live on main, switched off.
-FEATURE_GIFT_CARDS = False
+FEATURE_GIFT_CARDS = False  # set True only when the feature is finished
