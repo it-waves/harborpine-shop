@@ -24,3 +24,7 @@ class TestCartTotal(unittest.TestCase):
     def test_discount_code_ignores_spaces(self):
         self.assertEqual(cart_total([(6000, 1)], " save10 "), 5400)
         self.assertEqual(cart_total([(6000, 1)], "\tSAVE10\n"), 5400)
+
+    def test_discount_below_threshold_pays_shipping(self):
+        # $52 - 10% = $46.80, under $50, so shipping is still charged
+        self.assertEqual(cart_total([(5200, 1)], "SAVE10"), 4680 + 699)

@@ -16,8 +16,8 @@ def cart_total(items, discount_code=None, gift_wrap=False):
     items: list of (price_in_cents, quantity)
     """
     subtotal = sum(price * qty for price, qty in items)
-    shipping = 0 if subtotal >= FREE_SHIPPING_OVER else FLAT_SHIPPING
     code = (discount_code or "").strip().upper()
     subtotal = _apply_discount(subtotal, code)
+    shipping = 0 if subtotal >= FREE_SHIPPING_OVER else FLAT_SHIPPING
     wrap = GIFT_WRAP_FEE if gift_wrap else 0
     return subtotal + shipping + wrap
