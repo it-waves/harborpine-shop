@@ -1,6 +1,6 @@
 # Harbor & Pine Shop
 
-Checkout demo for Harbor & Pine Outfitters.
+Checkout demo for Harbor & Pine Outfitters. FAQ below.
 Free shipping on orders over $50.
 Gift wrap is available for $2.99.
 Discount code: SAVE10 (10% off).
