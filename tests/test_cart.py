@@ -14,3 +14,6 @@ class TestCartTotal(unittest.TestCase):
 
     def test_fifty_dollars_ships_free(self):
         self.assertEqual(cart_total([(5000, 1)]), 5000)
+
+    def test_discount_code_ignores_case(self):
+        self.assertEqual(cart_total([(10000, 1)], "save10"), 9000)
