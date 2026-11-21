@@ -5,7 +5,10 @@ GIFT_WRAP_FEE = 299  # cents, optional gift wrap
 
 
 def cart_total(items, discount_code=None, gift_wrap=False):
-    """Return the order total in cents."""
+    """Return the order total in cents.
+
+    items: list of (price_in_cents, quantity)
+    """
     subtotal = sum(price * qty for price, qty in items)
     code = (discount_code or "").strip().upper()
     if code in DISCOUNTS:
