@@ -1,6 +1,6 @@
 from shop.cart import DISCOUNTS
 
-BANNER = 'Winter sale'
+BANNER = 'Winter sale is on'
 BANNER_COLOR = 'darkred'
 STORE_HOURS = '9am to 6pm'
 
