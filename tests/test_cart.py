@@ -17,3 +17,6 @@ class TestCartTotal(unittest.TestCase):
 
     def test_discount_code_ignores_case(self):
         self.assertEqual(cart_total([(10000, 1)], "save10"), 9000)
+
+    def test_gift_wrap_adds_fee(self):
+        self.assertEqual(cart_total([(1200, 2)], gift_wrap=True), 2400 + 699 + 299)
