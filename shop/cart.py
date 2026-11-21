@@ -1,5 +1,5 @@
 FREE_SHIPPING_OVER = 5000  # cents ($50)
-FLAT_SHIPPING = 699
+FLAT_SHIPPING = 699  # cents ($6.99)
 DISCOUNTS = {"SAVE10": 10}
 GIFT_WRAP_FEE = 299  # cents, optional gift wrap
 
