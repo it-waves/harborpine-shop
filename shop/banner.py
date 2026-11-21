@@ -1,7 +1,7 @@
 from shop.cart import DISCOUNTS
 
 BANNER = 'Winter sale'
-BANNER_COLOR = 'red'
+BANNER_COLOR = 'darkred'
 
 
 def codes_line():
