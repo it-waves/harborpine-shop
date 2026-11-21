@@ -1,0 +1,1 @@
+BANNER = 'Winter sale'
