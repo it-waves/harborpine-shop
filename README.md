@@ -2,7 +2,7 @@
 
 Checkout demo for Harbor & Pine Outfitters. FAQ below.
 Free shipping on orders over $50.
-Gift wrap is available for $2.99.
+Gift wrap is available for $2.99 (tick the box at checkout).
 Discount code: SAVE10 (10% off).
 
 Run the tests with: python3 -m unittest -v
