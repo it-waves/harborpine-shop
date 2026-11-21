@@ -23,3 +23,4 @@ class TestCartTotal(unittest.TestCase):
 
     def test_discount_code_ignores_spaces(self):
         self.assertEqual(cart_total([(6000, 1)], " save10 "), 5400)
+        self.assertEqual(cart_total([(6000, 1)], "\tSAVE10\n"), 5400)
